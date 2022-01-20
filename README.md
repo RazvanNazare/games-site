@@ -1,27 +1,4 @@
-# GameSite
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![home](https://user-images.githubusercontent.com/58268118/150413878-e0ec341b-1152-4e8d-bc19-60823db4fd72.JPG)
+![game-details](https://user-images.githubusercontent.com/58268118/150413898-6c2fea0f-8d80-4313-9fac-8063bb3267b3.JPG)
+![screenshots](https://user-images.githubusercontent.com/58268118/150413903-af57931e-2e0e-400f-aa07-bc32ab8d5a3f.JPG)
+![trailers](https://user-images.githubusercontent.com/58268118/150413907-41ca8b72-60a7-4140-a492-dd4ba7612ab6.JPG)
