@@ -13,14 +13,22 @@ export class FavoriteGamesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    var favoriteGames = JSON.parse(localStorage.getItem("favoriteGames")?? "No games found") ;
-    this.games = favoriteGames ?? "No games found";
-    }
+    let itemsFromStorage = localStorage.getItem('favoriteGames');
+    this.games = itemsFromStorage ? JSON.parse(itemsFromStorage) : [];
+  }
 
   deleteAllFavoriteGames(): void {
     localStorage.clear();
+    this.games = [];
   }
 
+  deleteOneGame(toDeleteGame: FavoriteGame): void {
+
+    this.games.splice(this.games.indexOf(toDeleteGame), 1);
+    localStorage.clear();
+    localStorage.setItem('favoriteGames', JSON.stringify(this.games));
+
+  }
 }
 
 

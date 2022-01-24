@@ -17,7 +17,7 @@
 
 <div class="games">
   <ng-container *ngFor="let game of games">
-    <div class="game" (click)="openGameDetails(game.id)">
+    <div class="game">
       <div class="game-thumb-container">
         <img *ngIf="game.background_image" src="{{ game.background_image }}" alt="thumbnail" class="game-thumbnail" />
         <p *ngIf="!game.background_image">No image</p>
@@ -29,8 +29,15 @@
             src="assets/images/platforms/{{ gamePlatform.platform.slug }}.svg" alt="{{ gamePlatform.platform.slug}}" />
         </div>
       </div>
-      <button class="add-to-favorites" (click)="addGameToFavorites(game)">AddToFavorites</button>
+      <button class="see-more" (click)="openGameDetails(game.id)">See More</button>
+      <button class="add-to-favorites" (click)="addGameToFavorites(game)">
+        <div *ngIf="!isGameInFavorites(game)">
+          💙
+        </div>
+        <div *ngIf="isGameInFavorites(game)">
+          ❤️
+        </div>
+      </button>
     </div>
   </ng-container>
 </div>
-

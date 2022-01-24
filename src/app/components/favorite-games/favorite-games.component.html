@@ -1,5 +1,15 @@
-<ng-container *ngFor="let game of games">
-    <p>ngfor games works</p>
+<div class="games">
+  <ng-container *ngFor="let game of games">
+    <div class="game">
+      <div class="game-thumb-container">
+        <img *ngIf="game.background_image" src="{{ game.background_image }}" alt="thumbnail" class="game-thumbnail" />
+        <p *ngIf="!game.background_image">No image</p>
+      </div>
+      <div class="game-description">
+        <p class="game-name">{{ game.name }}</p>
+      </div>
+    <button class="btn btn-danger" (click)="deleteOneGame(game)">Delete</button>
+    </div>
   </ng-container>
-
-<button class="btn btn-danger" (click)="deleteAllFavoriteGames()">Delete all favorite games</button>
+<button id="delete-all-games-button" (click)="deleteAllFavoriteGames()">Delete all favorite games</button>
+</div>
