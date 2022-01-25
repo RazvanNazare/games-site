@@ -1,0 +1,120 @@
+.filters {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 20px;
+
+    ::ng-deep {
+        .mat-form-field-infix {
+            background-color: rgb(87, 87, 87);
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .mat-select-value,
+        .mat-select-arrow,
+        .mat-form-field-hide-placeholder
+            .mat-select-placeholder
+            .mat-form-field-appearance-legacy
+            .mat-form-field-label {
+            color: white !important;
+            opacity: 1;
+        }
+
+        .mat-form-field-infix {
+            border-color: white !important;
+            border-top: none;
+            padding-left: 5px !important;
+        }
+
+        .mat-form-field-appearance-legacy .mat-form-field-label {
+            padding-left: 5px;
+        }
+        .mat-form-field-appearance-legacy .mat-form-field-underline {
+            text-decoration: none;
+            display: none;
+        }
+    }
+}
+
+.sort {
+    color: white;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.game {
+    width: 280px;
+    margin: 10px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 4px 3px 8px 0px white;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 4px 4px 11px 6px white;
+        transform: translateY(-3px);
+    }
+    &-thumb-container {
+        background-color: black;
+        position: relative;
+        height: 172px;
+        color: white;
+        text-align: center;
+    }
+    &-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 172px;
+    }
+    &-description {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 120px;
+    }
+    &-name {
+        color: white;
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &-platforms {
+        display: flex;
+    }
+    &-platform {
+        width: 20px;
+        margin-right: 10px;
+    }
+}
+
+.add-to-favorites {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    margin-left: 42%;
+    transform:translateY(-5px);
+}
+
+.see-more{
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    transform:translateY(-5px);
+}
