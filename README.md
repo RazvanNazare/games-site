@@ -1,5 +1,5 @@
 ![home](https://user-images.githubusercontent.com/58268118/150963386-48301227-3f6d-4a00-8792-7ef8da746e21.JPG)
 ![favorite-games](https://user-images.githubusercontent.com/58268118/150963419-3ab779bd-c597-48c6-9733-393d21e8e6df.JPG)
-![game-details](https://user-images.githubusercontent.com/58268118/150413898-6c2fea0f-8d80-4313-9fac-8063bb3267b3.JPG)
-![screenshots](https://user-images.githubusercontent.com/58268118/150414045-dbc9066e-6108-4e0d-9ffc-0b06b5c762db.JPG)
-![trailers](https://user-images.githubusercontent.com/58268118/150413907-41ca8b72-60a7-4140-a492-dd4ba7612ab6.JPG)
+![game-details](https://user-images.githubusercontent.com/58268118/151078170-8844d905-7317-48e7-87b8-b10deb453e56.JPG)
+![screenshots](https://user-images.githubusercontent.com/58268118/151078181-4a4f2641-0b46-4719-b351-b6c4229b34b4.JPG)
+![trailers](https://user-images.githubusercontent.com/58268118/151078188-c3017dbb-90a8-472e-b476-e8fc78751535.JPG)
