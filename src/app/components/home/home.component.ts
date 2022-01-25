@@ -53,42 +53,22 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   addGameToFavorites(game: Game): void {
     let newGame = <FavoriteGame>{ id: game.id, name: game.name, background_image: game.background_image };
-    let flag = 0;
+    const gameFromArray = this.favoriteGames.find(x => x.id == game.id);
 
-    this.favoriteGames.forEach(game => {
-      if ((game.id.toString().localeCompare(newGame.id.toString())) == 0) {
-        flag = 1;
-      }
-    })
-
-    if (flag == 0) {
+    if (gameFromArray) {
+      this.favoriteGames.splice(this.favoriteGames.indexOf(gameFromArray), 1);
+      localStorage.clear();
+      localStorage.setItem('favoriteGames', JSON.stringify(this.favoriteGames));
+    }
+    else {
       this.favoriteGames.push(newGame);
       localStorage.clear();
       localStorage.setItem('favoriteGames', JSON.stringify(this.favoriteGames));
     }
-
-    else{
-    this.favoriteGames.splice(this.favoriteGames.indexOf(newGame)  , 1);
-    localStorage.clear();
-    localStorage.setItem('favoriteGames', JSON.stringify(this.favoriteGames));
-    }
   }
 
   isGameInFavorites(game: Game): boolean {
-    let newGame = <FavoriteGame>{ id: game.id, name: game.name, background_image: game.background_image };
-    let flag = 0;
-    this.favoriteGames.forEach(game => {
-      if ((parseInt(game.id) == parseInt(newGame.id) == true)) {
-        flag = 1;
-      }
-    })
-
-    if(flag == 1){
-    return true;
-    }
-    else {
-      return false;
-    }
+    return this.favoriteGames.find(x => x.id == game.id) != undefined;
   }
 
   ngOnDestroy(): void {
